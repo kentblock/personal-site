@@ -1,5 +1,8 @@
-const init = () => {
+const PROJECTS = '/projects'
+const HOME = '/'
 
+const init = () => {
+  
   const mainPage = document.querySelector("#main-page")
   const projectsPage = document.querySelector("#projects-page")
   const pages = [mainPage, projectsPage]
@@ -51,17 +54,19 @@ const init = () => {
   navBarIcon.addEventListener('click', () => {
     settingNavBoxOpen = true
     console.log("clicked on bars")
+    console.log("what the hekc")
+    console.log(window.location.pathname)
     navBox.style.visibility = "visible"
   })
 
   linkToProjects.addEventListener('click', () => {
-    showPage(projectsPage, pages)
+    goToPage(projectsPage, PROJECTS)
     history.pushState({}, "", window.location.pathname)
   })
 
   window.addEventListener('popstate', (e) => {
     if (e.target.location.pathname == window.location.pathname) {
-      showPage(mainPage, pages)
+      showPage(mainPage)
     }
   })
 
@@ -121,7 +126,22 @@ const init = () => {
       
     }
   }
-  showPage(mainPage)
+  console.log(window.location.pathname)
+  if (window.location.pathname == PROJECTS) {
+    showPage(projectsPage)
+  } else {
+    showPage(mainPage)
+  }
+  
+  const goToPage = (page, path) => {
+    showPage(page)
+    window.history.pushState({}, "", `${path}`)
+  }
+
+  window.onpopstate = (event) => {
+    window.history.replaceState({}, "", "/")
+  }
+
 }
 
 window.onload = init
