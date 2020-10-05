@@ -9,48 +9,39 @@
 </head>
 <body id="body">
 
-  <div id="nav-bar" class="flex-row color2-bg">
+  <div id="nav-bar" class="flex-row">
     <div class="nav-group nav-left">
-      <i id="bars-icon" class="fa fa-bars nav-icon"></i>
-      <h2 class="nav-icon">Riley's Site</h2>
+      <h3 class="left-nav-btns" id="home-btn">Home</h3>
+      <h3 class="left-nav-btns" id="projects-btn">Projects</h3>
     </div>
     <div class="nav-group nav-right">
       <a href="https://github.com/kentblock"><i class="fa fa-github nav-icon"></i></a>
       <a href="https://www.linkedin.com/in/riley-peel-27a4a91a2/"><i class="fa fa-linkedin nav-icon"></i></a>
-      <a href = "mailto: abc@example.com"><i class="fa fa-envelope nav-icon"></i></a>
+      <a href = "mailto: rpeel4@outlook.com"><i class="fa fa-envelope nav-icon"></i></a>
     </div>
   </div>
-  <div id="nav-box" class="">
-    <div id="projects-link" class="nav-box-item">
-      My Projects
-    </div>
-    <div class="nav-box-item">
-      Another Page
-    </div>
-  </div>
-
   <div id="main-page" class="page">
-    <h1>hello hello main page</h1>
+    <p id="main-text">Hello and Welcome,<br><br>My name is Riley Peel. I'm an amateur developer looking to go pro.
+      I'm particulary interested in web and mobile development, but I'm always keen to learn new skills. You can take 
+      a look at some of my recent work on the projects page. Feel free to send me an email at rpeel4@outlook.com. If you would 
+      like to check out my code or learn more about there are links to my github and linkedin at the top of the page. <br><br> Cheers, <br><br> Riley
+    </p>
   </div>
-
   <div id="projects-page" class="page">
-    <h1>Some of my projects...</h1>
     <div class="flex-row" id="cards-container"></div>
   </div>
-
   <div id="project-display">
     <div id="project-detail">
       <h2 id="project-display-title">Project Title</h2>
       <img id="project-detail-img" class="grey-border" src=""/>
       <div id="project-description">
-        <h4>Description</h4>
         <p id="description"> </p>
       </div>
       <div id="project-tech">
-        <h4>Tech Used</h4>
-        <p id="description"> Fake tech I shot the sheriff but i didnt shoot the deputyused</p>
+        <p id="tech"></p>
       </div>
-      <div id="project-link"> LINK
+      <div id="project-link"> 
+        <a id="project-site-link" style="color: white;"><p id="link-text">Live Site</p></a>
         <a id="project-gh-link" src="" style="color: white;">
           <i id="project-git" class="fa fa-github"></i>
         </a>
