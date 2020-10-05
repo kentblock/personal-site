@@ -26,7 +26,7 @@ const init = () => {
     },
     2: {
       title: "Stock Market Web App",
-      image: "fakeimage.png",
+      image: "stockapp.png",
       description: `This project is a web application which simulates buying and selling stocks, charts historical stock\
         price data, and displays some fundamental company data. I built a RESTful API using Django, and the Django Rest Framework,\
         as my backend for this app. I built out the frontend using Vue.js. You can find\
@@ -37,7 +37,7 @@ const init = () => {
     },
     3: {
       title: "MHSGV Mobile App",
-      image: "fakeimage.png",
+      image: "mhs.png",
       description: `I am working under the guidance of a Senior Mobile Developer to help build a\
         mobile app for the Mental Health Society of Greater Victoria. The app's main purpose is to\
         provide users with a comprehensive list of mental health resources in the Victoria area. It\
